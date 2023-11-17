@@ -9,4 +9,11 @@
     font-family: "League Spartan", sans-serif;
     background-color: #effafa;
   }
+  h2 {
+    @apply text-base font-medium leading-6 text-grey mr-2.5 inline-block desktop:text-lg desktop:mr-4;
+  }
+
+  p {
+    @apply text-sm font-bold text-white leading-14;
+  }
 }
