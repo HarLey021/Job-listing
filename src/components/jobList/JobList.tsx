@@ -1,8 +1,9 @@
 import { FC } from "preact/compat";
 import Job from "../job/Job";
 import data from "../../../data.json";
+import { filterArrInterface } from "../../Interfaces";
 
-const JobList: FC = () => (
+const JobList: FC<filterArrInterface> = ({ filterArr, setFilterArr }) => (
   <>
     {data &&
       data.map((job) => (
@@ -20,6 +21,8 @@ const JobList: FC = () => (
           location={job.location}
           languages={job.languages}
           tools={job.tools}
+          filterArr={filterArr}
+          setFilterArr={setFilterArr}
         />
       ))}
   </>

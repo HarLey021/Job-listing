@@ -1,4 +1,4 @@
-interface JobInterface {
+export interface JobInterface {
   id: number;
   company: string;
   logo: string;
@@ -12,6 +12,20 @@ interface JobInterface {
   location: string;
   languages: string[];
   tools: string[];
+  filterArr: string[];
+  setFilterArr: StateUpdater<string[]>;
 }
 
-export default JobInterface;
+export interface FilterCriteriasInterface {
+  language?: string;
+  tool?: string;
+  role?: string;
+  level?: string;
+  filterArr: string[];
+  setFilterArr: StateUpdater<string[]>;
+}
+
+export interface filterArrInterface {
+  filterArr: string[];
+  setFilterArr: StateUpdater<string[]>;
+}
