@@ -21,7 +21,9 @@ export default {
       },
       height: {
         14: "14px",
+        72: "72px",
         88: "88px",
+        120: "120px",
         152: "152px",
         156: "156px",
         257: "257px",
@@ -30,7 +32,7 @@ export default {
       borderWidth: { 5: "5px" },
       fontSize: { 13: "13px", 15: "15px", 22: "22px" },
       lineHeight: { 14: "14px" },
-      margin: { 7: "7px", 9: "9px", 15: "15px" },
+      margin: { 7: "7px", 9: "9px", 15: "15px", 36: "36px" },
     },
   },
   plugins: [],
