@@ -56,6 +56,7 @@ const Job: FC<JobInterface> = ({
         </div>
       </div>
       <div>
+        {/* This part of the code renders FilterCriterias components for each selected criteria in the filter area */}
         {role && (
           <FilterCriterias
             role={role}

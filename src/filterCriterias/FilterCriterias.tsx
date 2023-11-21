@@ -9,6 +9,8 @@ const FilterCriterias: FC<FilterCriteriasInterface> = ({
   filterArr,
   setFilterArr,
 }) => {
+  /*handleCriteriaClick function adds every chosen criteria to the filter array
+   for mapping and rendering filter criterias in filter area*/
   const handleCriteriaClick = (criteria?: string) => {
     if (criteria && !filterArr.includes(criteria)) {
       setFilterArr((prevFilterArr: any) => [...prevFilterArr, criteria]);

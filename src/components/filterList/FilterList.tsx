@@ -3,13 +3,15 @@ import { filterArrInterface } from "../../Interfaces";
 import Criteria from "../criteria/Criteria";
 
 const FilterList: FC<filterArrInterface> = ({ filterArr, setFilterArr }) => {
+  // State to manage a filtered copy of the filterArr
   const [filteredCriterias, setFilteredCriterias] =
     useState<string[]>(filterArr);
-
+  // Update the filteredCriterias state whenever filterArr changes
   useEffect(() => {
     setFilteredCriterias(filterArr);
   }, [filterArr]);
 
+  //This function is for deleting all criterias from filter array and filter area on the screen.
   const handleClearBtn = () => {
     setFilterArr([]);
     setFilteredCriterias([]);
@@ -19,6 +21,7 @@ const FilterList: FC<filterArrInterface> = ({ filterArr, setFilterArr }) => {
     <>
       {filteredCriterias.length !== 0 && (
         <div className="relative flex flex-wrap min-h-0 py-5 pl-5 pr-6 bg-white w-327 desktop:w-1110 desktop:min-h-72 desktop:px-10 rounded-5 -mt-36">
+          {/*Actually mapping and rendering chosen criterias*/}
           {filteredCriterias.map((criteria) => (
             <Criteria
               criteriaKey={criteria}

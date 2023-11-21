@@ -8,10 +8,13 @@ const Criteria: FC<CriteriaInterface> = ({
   filterArr,
   setFilterArr,
 }) => {
+  // Function to remove a criteria from the filter criteria area and update the filter array
   const handleXButton = () => {
+    // Create an updated filter array without the specified criteria
     const updatedFilterArr = filterArr.filter(
       (criteriaName) => criteriaName !== criteriaKey
     );
+    // Update the filter array
     setFilterArr(updatedFilterArr);
   };
   return (

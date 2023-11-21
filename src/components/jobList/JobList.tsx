@@ -4,6 +4,8 @@ import data from "../../../data.json";
 import { filterArrInterface } from "../../Interfaces";
 
 const JobList: FC<filterArrInterface> = ({ filterArr, setFilterArr }) => {
+  /*this code snipet is used for actually filtering job list
+  and returning only jobs with chosen criterias.*/
   const filteredJobs = data.filter((job) => {
     return filterArr.every((criteria) => {
       return (
@@ -16,6 +18,8 @@ const JobList: FC<filterArrInterface> = ({ filterArr, setFilterArr }) => {
   });
 
   return (
+    /*There job list is mapped and rendered based on filter criterias list.
+    If filter list is empty all jobs will be rendered*/
     <>
       {data &&
         filteredJobs.map((job) => (
