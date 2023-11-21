@@ -1,7 +1,7 @@
 import { FC } from "preact/compat";
 import ovalSeparatorLogo from "../../../public/images/Oval Copy.svg";
 import { JobInterface } from "../../Interfaces";
-import FilterCriterias from "../../filterCriterias/FilterCriterias";
+import FilterCriterias from "../filterCriterias/FilterCriterias";
 
 const Job: FC<JobInterface> = ({
   company,

@@ -1,5 +1,5 @@
 import { FC } from "preact/compat";
-import { FilterCriteriasInterface } from "../Interfaces";
+import { FilterCriteriasInterface } from "../../Interfaces";
 
 const FilterCriterias: FC<FilterCriteriasInterface> = ({
   language,
