@@ -14,7 +14,6 @@ const FilterCriterias: FC<FilterCriteriasInterface> = ({
       setFilterArr((prevFilterArr: any) => [...prevFilterArr, criteria]);
     }
   };
-
   return (
     <button
       onClick={() => handleCriteriaClick(language || tool || role || level)}

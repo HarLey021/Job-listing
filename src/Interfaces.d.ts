@@ -29,3 +29,10 @@ export interface filterArrInterface {
   filterArr: string[];
   setFilterArr: StateUpdater<string[]>;
 }
+
+export interface CriteriaInterface {
+  criteriaKey: string;
+  criteria: string;
+  filterArr: string[];
+  setFilterArr: StateUpdater<string[]>;
+}
